@@ -14,7 +14,7 @@ public class TempConv {
 
         boolean runProgram = true;
 
-        while (runProgram) {
+        while (true) {
             System.out.print("Please choose an option (1 or 2): ");
             try {
                 number_of_your_choice = scanner.nextInt();
@@ -42,17 +42,8 @@ public class TempConv {
 
                 }
 
-                if (number_of_your_choice == 1) {
-
-
-                    double fahrenheit = (temperature * 9 / 5) + 32;
-                    System.out.printf("%.2f Celsius is %.2f Fahrenheit.%n", temperature, fahrenheit);
-
-                } else {
-
-                    double celsius = (temperature - 32) * 5 / 9;
-                    System.out.printf("%.2f Fahrenheit is %.2f Celsius.%n", temperature, celsius);
-                }
+                double celsius = (temperature - 32) * 5 / 9;
+                System.out.printf("%.2f Fahrenheit is %.2f Celsius.%n", temperature, celsius);
 
                 scanner.close();
             }
