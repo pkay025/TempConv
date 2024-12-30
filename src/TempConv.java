@@ -5,14 +5,12 @@ public class TempConv {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int number_of_your_choice = 5;
+        int number_of_your_choice;
         double temperature = 12.4;
 
         System.out.println("Temperature Converter");
         System.out.println("1. Convert Celsius to Fahrenheit");
         System.out.println("2. Convert Fahrenheit to Celsius");
-
-        boolean runProgram = true;
 
         while (true) {
             System.out.print("Please choose an option (1 or 2): ");
